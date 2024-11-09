@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #fdfdfd;
+    line-height: 1.6;
+}
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #0066cc15, #272c2e);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.1em;
+}
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.nav-links {
+    margin-top: 15px;
+}
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #ffefdb;
+}
+/* Section Styling */
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+.experience-item, .education-item {
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+/* Contact Links */
+#contact a {
+    color: #2d3e4e77;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+#contact a:hover {
+    color: #004080;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #888;
+    font-size: 0.9em;
+    margin-top: 30px;
+}
+/* Animations */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: 0.3s;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
